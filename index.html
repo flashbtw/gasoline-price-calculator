@@ -1,0 +1,66 @@
+<html>
+    <title>Benzinpreisrechner</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <body class="dark-background">
+        <div class="top spacer"><br></div>
+        <div id="top">
+            <div class="center-div">
+		<table class="table-border">
+                    <tr> 
+                      <td>
+
+                        <table class="width-100 table-border">
+                          <tr>
+                            <td class="lh-2" id="heading">Benzinpreisrechner</td>
+                          </tr>
+                          <tr>
+                            <td class="lh-2">by flash_btw</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		    <tr>
+                      <td>
+                    
+                        <table class="table-border">
+                          <tr>
+                            <td class="td-border">Benzinpreis pro l (in ct)</td>
+                            <td class="td-border">Kilometeranzahl</td>
+                            <td class="td-border">Verbauch in l / 100km</td>
+                          </tr>
+                          <tr>
+                            <td class="td-border"><input type="text" class="dark-input input-style" id="priceperliter" value="200.9"></td>
+                            <td class="td-border"><input type="text" class="dark-input input-style" id="drivenkilometers" value="420"></td>
+                            <td class="td-border"><input type="text" class="dark-input input-style" id="fuelconsumption" value="6.9"> </td>
+                          </tr>
+                        </table>
+
+		        </td>
+                      </tr>
+                      <tr>
+                        <td>
+
+                          <table class="table-width">
+                            <tr>
+			      <td class="td-width"></td>
+                              <td class="td-width">
+                                <button class="dark-button button-style" onclick="calculatePriceInCents()"> Benzinpreis berechnen </button>
+                              </td>
+			      <td class="td-width"></td>
+                            </tr>
+                            <tr>
+			      <td class="td-width"></td>
+                              <td class="td-width">
+                                <output id="PriceField"></output>
+                              </td>
+			      <td class="td-width"></td>
+                            </tr>
+                          </table>
+                </table>
+
+            </div>
+        </div>
+    </body>
+</html>
